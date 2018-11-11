@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:XamIssues" x:Class="XamIssues.MainPage">
+    <Grid RowSpacing="0"> 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!-- Place new controls here -->
+        <Label Text="3 BoxViews below. The SPACE between two blue bands is expected to be filled with BINDING" 
+               HorizontalOptions="Center" VerticalOptions="CenterAndExpand" 
+               Grid.Row="0"/>
+        <Button Text="Toggle Color" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,100,0,0"
+                Clicked="Handle_Clicked" TextColor="Black"/>
+        
+        <StackLayout Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand"
+                     Spacing="0">
+            <BoxView HorizontalOptions="FillAndExpand" VerticalOptions="Center"
+                     HeightRequest="10" BackgroundColor="Blue"/>
+            <BoxView HorizontalOptions="FillAndExpand" VerticalOptions="Center"
+                     HeightRequest="10" BackgroundColor="{Binding BkClr}"/>
+            <BoxView HorizontalOptions="FillAndExpand" VerticalOptions="Center"
+                     HeightRequest="10" BackgroundColor="Blue"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
