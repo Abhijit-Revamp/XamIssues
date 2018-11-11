@@ -6,7 +6,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <!-- Place new controls here -->
-        <Label Text="3 BoxViews below. The SPACE between two blue bands is expected to be filled with BINDING" 
+        <Label Text="3 BoxViews below. The SPACE between two blue bands is expected to be filled with BINDING. Press button to TOGGLE" 
                HorizontalOptions="Center" VerticalOptions="CenterAndExpand" 
                Grid.Row="0"/>
         <Button Text="Toggle Color" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,100,0,0"

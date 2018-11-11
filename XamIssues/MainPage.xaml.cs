@@ -16,7 +16,6 @@ namespace XamIssues
             BindingContext = this;
         }
 
-        //https://github.com/Abhijit-Revamp/XamIssues.git
         public Color BkClr { get; set; } = Color.Red;
 
         void Handle_Clicked(object sender, System.EventArgs e)
